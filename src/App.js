@@ -6,7 +6,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/home" element={<HomepPage />}></Route>
+        <Route exact path="/" element={<HomepPage />}></Route>
       </Routes>
     </Router>
   );
