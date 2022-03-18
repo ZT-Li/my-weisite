@@ -2,10 +2,10 @@ import "./Slides.css";
 import { useState, useEffect, useRef } from "react";
 
 
-//slide background img
+//onclick functions
 const bg_img = [
-    "./icons.java_logo.png",
-    "./icons.js_logo.png"
+    "/icons/java_logo.png",
+    "/icons/js_logo.png"
 ];
 // delay of the auto playing slide
 const delay = 3000;
@@ -39,13 +39,13 @@ const Slides = () => {
     return (
         <div className="content">
             <div className="slider" style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
-                {bg_img.map((bg, idx) => (<div className="slide" key={idx} style={{ background: bg_img }}></div>))}
+                {bg_img.map((bg, idx) => (<div className="slide" key={idx} style={{ backgroundImage: `url(${process.env.PUBLIC_URL + bg})` }}></div>))}
             </div>
 
             <div className="selector">
                 {bg_img.map((_, idx) => (<div className={`dot${index === idx ? " active" : ""}`} key={idx} onClick={() => setIndex(idx)}></div>))}
             </div>
-        </div>
+        </div >
     );
 }
 
