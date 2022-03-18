@@ -16,6 +16,10 @@
   border-radius: 50px;
 }
 
+.slide:hover {
+  height: 410px;
+}
+
 .selector {
   text-align: center;
 }
