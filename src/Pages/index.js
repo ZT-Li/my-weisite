@@ -1,1 +1,3 @@
-export { default as HomepPage } from "./homepage/HomepPage";
+export { default as HomepPage } from "./HomePage/HomepPage";
+export { default as JavaPage } from "./JavaPage/JavaPage";
+export { default as JSPage } from "./JSPage/JSPage";

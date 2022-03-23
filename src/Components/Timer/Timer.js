@@ -18,7 +18,6 @@ const Timer = () => {
         for (let i = 0; i < sTime.length; i++) {
             oImg[i].src = require("./num/" + sTime[i] + ".png");
         }
-
     }
 
     //refresh the function every 10 sec

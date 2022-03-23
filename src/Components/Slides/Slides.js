@@ -1,5 +1,6 @@
 import "./Slides.css";
 import { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 //onclick functions
@@ -9,6 +10,8 @@ const bg_img = [
 ];
 // delay of the auto playing slide
 const delay = 3000;
+
+
 
 
 const Slides = () => {
@@ -22,6 +25,21 @@ const Slides = () => {
             clearTimeout(timeout.current);
         }
     }
+
+
+    let navi = useNavigate();
+    //navigate to JavaPage
+    function ToJavaPage() {
+        navi("/java");
+    }
+
+    //navigate to JSPage
+    function ToJSPage() {
+        navi("./js");
+    }
+
+    //navigation array
+    const navigations = [ToJavaPage, ToJSPage];
 
     //update the slides and corresponding btns with the index constant, and reset the timeout when index is manually changed
     useEffect(() => {
@@ -40,12 +58,10 @@ const Slides = () => {
         <div className="content">
             <div className="slider" style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
                 {bg_img.map((bg, idx) => (<div className="slide" key={idx} style={{
-                    backgroundImage: `url(${process.env.PUBLIC_URL + bg})`,
-                    backgroundSize: "contain",
-                    backgroundRepeat: "no-repeat"
-                }}></div>))}
+                    backgroundImage: `url(${process.env.PUBLIC_URL + bg})`
+                }} onClick={navigations[idx]}>
+                </div>))}
             </div>
-
             <div className="selector">
                 {bg_img.map((_, idx) => (<div className={`dot${index === idx ? " active" : ""}`} key={idx} onClick={() => setIndex(idx)}></div>))}
             </div>
