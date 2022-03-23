@@ -1,9 +1,11 @@
-.homepage {
-  background-image: url("http://wallpaperstock.net/purple-lavender-clouds-sunset_wallpapers_52128_1920x1080.jpg");
-}
-
-.header {
-  background-color: black;
+.body-view {
+  background: rgba(0, 0, 0, 0.3)
+    url("https://images.pexels.com/photos/208745/pexels-photo-208745.jpeg")
+    no-repeat center;
+  background-blend-mode: darken;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
 }
 
 .my-name {

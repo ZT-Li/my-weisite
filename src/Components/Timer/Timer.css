@@ -1,12 +1,12 @@
 .timer {
+  display: inline-block;
   font-size: 150px;
   color: #c96;
   text-align: center;
   grid-row: 1;
-  margin-left: 30%;
-  margin-right: 30%;
   background: rgba(255, 255, 255, 0.6);
   border-radius: 35px;
+  margin-top: 10%;
 }
 
 img {
