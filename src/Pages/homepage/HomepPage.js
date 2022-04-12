@@ -2,7 +2,6 @@ import "./HomePage.css"
 import Typewriter from "typewriter-effect";
 import { Timer, Slides, Navibar } from "../../Components/index";
 
-
 const HomePage = () => {
 
     return (
