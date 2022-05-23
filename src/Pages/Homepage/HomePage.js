@@ -1,7 +1,5 @@
 import "./HomePage.css"
-import Typewriter from "typewriter-effect";
 import { Timer, Slides, Navibar, MouseEffects } from "../../Components/index";
-import { useState } from "react";
 
 const HomePage = () => {
 
@@ -12,7 +10,7 @@ const HomePage = () => {
             <section id="main" className="main">
                 <Timer />
                 <div className="header">
-                    <img className="my-name" />
+                    <img className="my-name" alt="" />
                 </div>
             </section>
             <section id="about" className="about">
