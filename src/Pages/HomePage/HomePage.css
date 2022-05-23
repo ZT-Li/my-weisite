@@ -1,4 +1,8 @@
-.body-view {
+html {
+  scroll-behavior: smooth;
+}
+
+.main {
   background: rgba(0, 0, 0, 0.3)
     url("https://images.pexels.com/photos/208745/pexels-photo-208745.jpeg")
     no-repeat center;
@@ -9,21 +13,22 @@
 }
 
 .my-name {
-  width: 100%;
+  height: 50vh;
   text-align: center;
-  font-family: "Marck Script", cursive;
-  font-size: 75px;
   color: white;
-  padding-top: 1%;
   margin-bottom: 15px;
+  content: url("./pic/signature_logo.png");
 }
-@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
 
-.caption {
+.about {
+  height: 100vh;
+  background-color: #76b6c4;
   color: white;
-  font-size: 30px;
   text-align: center;
-  padding-bottom: 1%;
-  font-family: "Cinzel", serif;
+  text-size-adjust: 20vh;
 }
-@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Marck+Script&display=swap");
+
+.projects {
+  background-color: #3178b3;
+}

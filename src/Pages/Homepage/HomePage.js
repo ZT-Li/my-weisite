@@ -1,33 +1,26 @@
 import "./HomePage.css"
 import Typewriter from "typewriter-effect";
-import { Timer, Slides, Navibar } from "../../Components/index";
+import { Timer, Slides, Navibar, MouseEffects } from "../../Components/index";
+import { useState } from "react";
 
 const HomePage = () => {
 
     return (
         <>
-
+            <MouseEffects />
             <Navibar />
-            <div className="body-view">
+            <section id="main" className="main">
                 <Timer />
                 <div className="header">
-                    <h1 className="my-name">
-                        Zhuotang Li
-                    </h1>
-                    <div className="caption">
-                        <Typewriter
-                            options={{
-                                strings: ["Know it means Own it"],
-                                autoStart: true,
-                                loop: true,
-                                cursor: "",
-                                delay: 100,
-                            }} />
-                    </div>
+                    <img className="my-name" />
                 </div>
-
-            </div>
-            <Slides />
+            </section>
+            <section id="about" className="about">
+                about
+            </section>
+            <section id="projects" className="projects">
+                <Slides />
+            </section>
         </>
     );
 }

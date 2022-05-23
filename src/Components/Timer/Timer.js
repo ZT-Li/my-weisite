@@ -14,7 +14,7 @@ const Timer = () => {
     async function run() {
         let oDate = new Date()
         let sTime = toStr(oDate.getHours()) + toStr(oDate.getMinutes());
-        let oImg = document.getElementsByTagName("img");
+        let oImg = document.getElementsByClassName("time");
         for (let i = 0; i < sTime.length; i++) {
             oImg[i].src = require("./num/" + sTime[i] + ".png");
         }
@@ -27,11 +27,11 @@ const Timer = () => {
     let initTime = toStr(initDate.getHours()) + toStr(initDate.getMinutes());
     return (
         <div className="timer">
-            <img src={require(`./num/${initTime[0]}.png`)} alt="" />
-            <img src={require(`./num/${initTime[1]}.png`)} alt="" />
+            <img className="time" src={require(`./num/${initTime[0]}.png`)} alt="" />
+            <img className="time" src={require(`./num/${initTime[1]}.png`)} alt="" />
             :
-            <img src={require(`./num/${initTime[2]}.png`)} alt="" />
-            <img src={require(`./num/${initTime[3]}.png`)} alt="" />
+            <img className="time" src={require(`./num/${initTime[2]}.png`)} alt="" />
+            <img className="time" src={require(`./num/${initTime[3]}.png`)} alt="" />
         </div>
     );
 }

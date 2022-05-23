@@ -1,5 +1,31 @@
 .navibar {
+  height: 65px;
+  background-color: black;
+  color: white;
+  position: fixed;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.navibar-onscroll {
   height: 50px;
   background-color: black;
   color: white;
+  position: fixed;
+  width: 100%;
+  opacity: 0.6;
+  transition: all 0.5s;
+}
+
+.navi-links{
+  text-align: right;
+  text-transform: uppercase;
+  height: 100%;
+}
+
+.link, .link:visited {
+  height: 100%;
+  color: white;
+  text-decoration: none;
+  margin: 1vw;
 }
