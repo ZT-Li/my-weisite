@@ -18,14 +18,29 @@
 }
 
 .navi-links{
-  text-align: right;
-  text-transform: uppercase;
   height: 100%;
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .link, .link:visited {
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
   height: 100%;
+  width: 33%;
   color: white;
   text-decoration: none;
-  margin: 1vw;
+  transition: all 0.5s;
 }
+
+.link:hover {
+  background-color: skyblue;
+  color: black;
+}
+
+.link-label {
+  margin-top: 10%;
+}
+

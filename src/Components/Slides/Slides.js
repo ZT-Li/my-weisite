@@ -35,7 +35,7 @@ const Slides = () => {
 
     //navigate to JSPage
     function ToJSPage() {
-        navi("./js");
+        navi("/js");
     }
 
     //navigation array
