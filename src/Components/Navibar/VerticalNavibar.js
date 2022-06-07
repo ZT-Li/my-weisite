@@ -18,9 +18,6 @@ const VerticleNavibar = (props) => {
                 {props.arr.map(item => {
                     return (
                         <li className="items">
-                            <a href="">
-                                <div className="vbar-link">{item}</div>
-                            </a>
                         </li>
                     );
                 })}
