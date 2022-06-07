@@ -1,10 +1,14 @@
 import "./JSPage.css";
+import { VerticalNavibar } from "../../Components";
+
 
 const JSPage = () => {
+    const menu = ["HomeRadar"];
+
     return (
-        <div>
-            This is JS Page
-        </div>
+        <>
+            <VerticalNavibar arr={menu} />
+        </>
     )
 }
 

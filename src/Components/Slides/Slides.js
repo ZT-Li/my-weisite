@@ -59,7 +59,7 @@ const Slides = () => {
             <div className="slider" style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
                 {bg_img.map((bg, idx) => (<div className="slide" key={idx} style={{
                     backgroundImage: `url(${process.env.PUBLIC_URL + bg})`
-                }} onClick={navigations[idx]}>
+                }} onClick={navigations[idx]} draggable="true">
                 </div>))}
             </div>
             <div className="selector">

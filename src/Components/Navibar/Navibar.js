@@ -1,22 +1,22 @@
 import "./Navibar.css";
-import { useState } from "react";
+import { useRef } from "react";
 import { Links } from "./Navdata";
 
 const Navibar = () => {
-    const [scroll, setScroll] = useState(false);
 
-    const checkScroll = () => {
-        if (window.scrollY >= 80) {
-            setScroll(true);
+    const navbarRef = useRef();
+    function scroll() {
+        if (window.scrollY > 100) {
+            navbarRef.current.classList.add("onscroll");
         } else {
-            setScroll(false);
+            navbarRef.current.classList.remove("onscroll");
         }
     }
 
+    window.addEventListener("scroll", scroll);
 
-    window.addEventListener("scroll", checkScroll);
     return (
-        <div className={scroll ? "navibar-onscroll" : "navibar"}>
+        <div ref={navbarRef} className="navibar">
             <div className="navi-links">
                 {Links.map((link) => {
                     return (

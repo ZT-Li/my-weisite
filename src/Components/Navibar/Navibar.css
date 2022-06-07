@@ -1,20 +1,15 @@
 .navibar {
   height: 65px;
   background-color: black;
-  color: white;
   position: fixed;
   width: 100%;
+  z-index: 10;
   transition: all 0.5s;
 }
 
-.navibar-onscroll {
+.navibar.onscroll {
   height: 50px;
-  background-color: black;
-  color: white;
-  position: fixed;
-  width: 100%;
   opacity: 0.6;
-  transition: all 0.5s;
 }
 
 .navi-links{
@@ -24,14 +19,12 @@
   margin-left: auto;
 }
 
-.link, .link:visited {
+.link {
   text-transform: uppercase;
   text-align: center;
   display: inline-block;
   height: 100%;
   width: 33%;
-  color: white;
-  text-decoration: none;
   transition: all 0.5s;
 }
 
@@ -42,5 +35,6 @@
 
 .link-label {
   margin-top: 10%;
+  height: 100%;
 }
 
